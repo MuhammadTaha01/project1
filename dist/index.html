@@ -5,247 +5,287 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/src/output.css">
+    <!-- <link rel="stylesheet" href="/src/output.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <title>MyWall</title>
 </head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar 
+    {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar 
+    {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    .active-button 
+    {
+        /* Example styles */
+        background-color: white;
+        color: black;
+    }
+
+    .inactive-button 
+    {
+        /* Example styles */
+        background-color: #626262;
+        color: white;
+    }
+</style>
 
 <body>
 
     <div class="container-wrapper bg-white flex">
-    <div id="about-section" style="display: none;" class="flex w-[700px] mx-auto flex-col justify-center items-center bg-black overflow-hidden">
+        <div id="about-section" style="display: none;" class="flex w-[700px] mx-auto flex-col justify-center items-center bg-black overflow-hidden">
 
-        <!-- This is her Image -->
-        <div class="relative text-white mt-4">
-            <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fprofile%2Fnoura-bgrc-upload-1717414160245-15&w=640&q=75'
-                alt="headerImage" 
-                class="w-80 h-80 rounded-full object-cover">
-        </div>
+            <!-- This is her Image -->
+            <div class="relative text-white mt-4">
+                <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fprofile%2Fnoura-bgrc-upload-1717414160245-15&w=640&q=75'
+                    alt="headerImage" 
+                    class="w-80 h-80 rounded-full object-cover">
+            </div>
 
-        <!-- This is her username -->
-        <div class="absolute bg-[#2f2f36] text-white whitespace-nowrap font-bold rounded-xl
-                   sm-only: top-[290px] mb-10  text-xl px-[120px] py-[20px]">
-            URSULA JONES
-        </div>
+            <!-- This is her username -->
+            <div class="absolute bg-[#2f2f36] text-white whitespace-nowrap font-bold rounded-xl
+                    sm-only: top-[290px] mb-10  text-xl px-[120px] py-[20px]">
+                URSULA JONES
+            </div>
 
-        <!-- This is her short about section -->
-        <div class="flex flex-col bg-white text-black p-5 px-[55px] mt-8 rounded-xl text-center text-[14px]">
-            <span> Travel influencer who shares her adventures </span>
-            <span> and travel on social media and personal </span>
-            <span> blog. </span>
-        </div>
+            <!-- This is her short about section -->
+            <div class="flex flex-col bg-white text-black p-5 px-[55px] mt-8 rounded-xl text-center text-[14px]">
+                <span> Travel influencer who shares her adventures </span>
+                <span> and travel on social media and personal </span>
+                <span> blog. </span>
+            </div>
 
-        <!-- This is her social accounts icons -->
-        <div class="flex flex-row gap-3 mt-3">
-            <a href="" target="_blank">
-                    <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_black-512.png"
-                    alt="facebook" 
+            <!-- This is her social accounts icons -->
+            <div class="flex flex-row gap-3 mt-3">
+                <a href="" target="_blank">
+                        <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_black-512.png"
+                        alt="facebook" 
+                        class="animate-pulse text-white h-10 w-10 p-1.5 bg-white rounded-full">
+                    </a> 
+                </a>
+
+                <a href="" target="_blank">
+                        <img src="https://www.edigitalagency.com.au/wp-content/uploads/YouTube-icon-black-png.png"
+                        alt="youtube" 
+                        class="animate-pulse text-white h-10 w-12 p-2 bg-white rounded-full">
+                    </a> 
+                </a>
+
+                <a href="" target="_blank">
+                    <img src="https://pngimg.com/uploads/pinterest/pinterest_PNG15.png"
+                    alt="pinterest" 
                     class="animate-pulse text-white h-10 w-10 p-1.5 bg-white rounded-full">
-                </a> 
-            </a>
+                </a>
 
-            <a href="" target="_blank">
-                    <img src="https://www.edigitalagency.com.au/wp-content/uploads/YouTube-icon-black-png.png"
-                    alt="youtube" 
-                    class="animate-pulse text-white h-10 w-12 p-2 bg-white rounded-full">
-                </a> 
-            </a>
+                <a href="https://www.snapchat.com/add/nouraglams?share_id=8GwflpeMQ8i3qCScErxOSQ&locale=ar_SA%40calendar%3Dgregorian%3Bnumbers%3Dlatn" target="_blank">
+                    <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/twitter-icon.png"
+                    alt="twitter" 
+                    class="animate-pulse text-white h-10 w-10 p-1.5 bg-white rounded-full">
+                </a>
 
-            <a href="" target="_blank">
-                <img src="https://pngimg.com/uploads/pinterest/pinterest_PNG15.png"
-                alt="pinterest" 
-                class="animate-pulse text-white h-10 w-10 p-1.5 bg-white rounded-full">
-            </a>
+                <a href="https://www.tiktok.com/@nouraglam?_t=8mkivBukixc&amp;_r=1" target="_blank">
+                    <img src="https://www.pngplay.com/wp-content/uploads/9/TikTok-Logo-Background-PNG.png" 
+                    alt="tiktok"
+                    class="animate-pulse text-white h-10 w-10 p-1 bg-white rounded-full">
+                </a>
+            </div>
 
-            <a href="https://www.snapchat.com/add/nouraglams?share_id=8GwflpeMQ8i3qCScErxOSQ&locale=ar_SA%40calendar%3Dgregorian%3Bnumbers%3Dlatn" target="_blank">
-                <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/twitter-icon.png"
-                alt="twitter" 
-                class="animate-pulse text-white h-10 w-10 p-1.5 bg-white rounded-full">
-            </a>
+            <!-- These are the 20 buttons -->
+            <div class="sm-only:flex mt-10 pl-6 pr-6 w-full no-scrollbar overflow-x-auto whitespace-nowrap">
+                <button id="about-btn" 
+                class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
+                <button id="brand-btn" 
+                class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
+                <button id="about-btn" 
+                class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
+                <button id="brand-btn" 
+                class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
+                <button id="about-btn" 
+                class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
+                <button id="brand-btn" 
+                class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
+                <button id="about-btn" 
+                class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
+                <button id="brand-btn" 
+                class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
+                <button id="about-btn" 
+                class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
+                <button id="brand-btn" 
+                class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
+                <button id="about-btn" 
+                class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
+                <button id="brand-btn" 
+                class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
+                <button id="about-btn" 
+                class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
+                <button id="brand-btn" 
+                class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
+                <button id="about-btn" 
+                class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
+                <button id="brand-btn" 
+                class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
+                <button id="about-btn" 
+                class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
+                <button id="brand-btn" 
+                class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
+                <button id="about-btn" 
+                class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
+                <button id="brand-btn" 
+                class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
+            </div>
 
-            <a href="https://www.tiktok.com/@nouraglam?_t=8mkivBukixc&amp;_r=1" target="_blank">
-                <img src="https://www.pngplay.com/wp-content/uploads/9/TikTok-Logo-Background-PNG.png" 
-                alt="tiktok"
-                class="animate-pulse text-white h-10 w-10 p-1 bg-white rounded-full">
-            </a>
+            <!-- This is [her socials account] section -->
+            <div class="pl-[20px] pr-[20px] mt-7 mb-[2px] overflow-x-auto w-full no-scrollbar">
+                <div class="static">
+                    <h3 class="z-10 absolute text-white mb-6 text-[20px]
+                            sm-only:whitespace-nowrap text-2xl font-bold">My Socials</h3>
+                </div>
+                <div class="flex mt-10 gap-7 w-max">
+                    
+                    <div class="relative p-4 bg-[#2f2f36] rounded-xl">
+                        <a href="https://www.instagram.com/nouraglam/" target="_blank">
+                            <img src="https://mywall.me/assets/svg/link-icon.svg" 
+                                alt="linkImg"
+                                class="absolute top-6 left-64 w-9 h-9 rounded-full bg-[#ffffff99] p-2">
+                            <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F58-1717517985828&w=3840&q=75'
+                                alt="instaPage" class="w-[280px] h-[180px] object-cover rounded-2xl">
+                        </a>
+                        <h3 class="text-white font-bold">My Instagram</h3>
+                    </div>
+                    
+                    <div class="relative p-4 bg-[#2f2f36] rounded-xl">
+                        <a href="https://www.tiktok.com/@nouraglam?_t=8mkivBukixc&amp;_r=1" target="_blank">
+                            <img src="https://mywall.me/assets/svg/link-icon.svg" 
+                                alt="linkImg"
+                                class="absolute top-6 left-64 w-9 h-9 rounded-full bg-[#ffffff99] p-2">
+                            <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F59-1717517998762&w=3840&q=75'
+                                alt="tiktokPage" class="w-[280px] h-[180px] object-cover rounded-2xl">
+                        </a>
+                        <h3 class="text-white font-bold">My Tiktok</h3>
+                    </div>
+
+                    <div class="relative p-4 bg-[#2f2f36] rounded-xl">
+                        <a href="https://www.snapchat.com/add/nouraglams?share_id=8GwflpeMQ8i3qCScErxOSQ&locale=ar_SA%40calendar%3Dgregorian%3Bnumbers%3Dlatn"
+                            target="_blank">
+                            <img src="https://mywall.me/assets/svg/link-icon.svg" 
+                                alt="linkImg"
+                                class="absolute top-6 left-64 w-9 h-9 rounded-full bg-[#ffffff99] p-2">
+                            <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F60-1717518021369&w=3840&q=75'
+                                alt="snapchat" class="w-[280px] h-[180px] object-cover rounded-2xl">
+                        </a>
+                        <h3 class="text-white font-bold">My Snapchat</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- This is [brand she had worked] with section -->
+            <div class="mt-7 sm-only:flex overflow-x-auto no-scrollbar w-full pl-[20px] pr-[50px]">
+                <div class="static">
+                    <h3 class="z-10 absolute text-white font-bold mb-6 text-[20px]">Brands Workded With</h3>
+                </div>
+                <div class="flex gap-7 w-max mt-10">
+                    <div class="p-3 bg-[#2f2f36] rounded-xl">
+                        <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F55-1717399010551&w=96&q=75'
+                            alt="brand1" class="w-[70px] h-[70px] object-cover rounded-2xl">
+                    </div>
+
+                    <div class="p-3 bg-[#2f2f36] rounded-xl">
+                        <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F60-1717399011254&w=96&q=75'
+                            alt="brand2" class="w-[70px] h-[70px] object-cover rounded-2xl">
+                    </div>
+
+                    <div class="p-3 bg-[#2f2f36] rounded-xl">
+                        <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F64-1717399011806&w=96&q=75'
+                            alt="brand3" class="w-[70px] h-[70px] object-cover rounded-2xl">
+                    </div>
+
+                    <div class="p-3 bg-[#2f2f36] rounded-xl">
+                        <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F63-1717399011666&w=96&q=75'
+                            alt="brand4" class="w-[70px] h-[70px] object-cover rounded-2xl">
+                    </div>
+
+                    <div class="p-3 bg-[#2f2f36] rounded-xl">
+                        <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F59-1717399011141&w=96&q=75'
+                            alt="brand5" class="w-[70px] h-[70px] object-cover rounded-2xl">
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- This is Insta insights section -->
+            <div class="pl-[20px] pr-[20px] mt-9 mb-[2px] overflow-x-auto w-full no-scrollbar">
+                <div class="static">
+                    <h3 class="absolute z-10 text-white font-bold mr-[490px] mb-6 text-[20px] whitespace-nowrap">My Insta Insights</h3>
+                </div>
+                <div class="flex gap-7 w-max mt-10">
+                    <div class="p-4 bg-[#2f2f36] rounded-xl">
+                        <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F123-1717416414812&w=256&q=75'
+                            alt="instaInsight1" class="w-[200px] h-[250px] object-cover rounded-2xl">
+                    </div>
+                    <div class="p-4 bg-[#2f2f36] rounded-xl">
+                        <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F124-1717416423576&w=256&q=75'
+                            alt="instaInsight2" class="w-[200px] h-[250px] object-cover rounded-2xl">
+                    </div>
+                    <div class="p-4 bg-[#2f2f36] rounded-xl">
+                        <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F127-1717416419454&w=256&q=75'
+                            alt="instaInsight3" class="w-[200px] h-[250px] object-cover rounded-2xl">
+                    </div>
+                    <div class="p-4 bg-[#2f2f36] rounded-xl">
+                        <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F125-1717416428166&w=256&q=75'
+                            alt="instaInsight3" class="w-[200px] h-[250px] object-cover rounded-2xl">
+                    </div>
+                </div>
+            </div>
+
+            <!-- This is tiktok insights section -->
+            <div class="pl-[20px] pr-[20px] mt-7 mb-[100px] overflow-x-auto w-full no-scrollbar">
+                <div class="static">
+                    <h3 class="absolute text-white font-bold mr-[490px] mb-6 text-[20px] whitespace-nowrap">My Tiktok Insights</h3>
+                </div>
+                <div class="flex gap-7 w-max mt-10">
+                    <div class="p-4 bg-[#2f2f36] rounded-xl">
+                        <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F126-1717416394058&w=256&q=75'
+                            alt="tiktokInsight1" class="w-[200px] h-[250px] object-cover rounded-2xl">
+                    </div>
+                    <div class="p-4 bg-[#2f2f36] rounded-xl">
+                        <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F128-1717399286119&w=256&q=75'
+                            alt="tiktokInsight2" class="w-[200px] h-[250px] object-cover rounded-2xl">
+                    </div>
+                    <div class="p-4 bg-[#2f2f36] rounded-xl">
+                        <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F129-1717399286264&w=256&q=75'
+                            alt="tiktokInsight3" class="w-[200px] h-[250px] object-cover rounded-2xl">
+                    </div>
+                    <div class="p-4 bg-[#2f2f36] rounded-xl">
+                        <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F130-1717399286418&w=256&q=75'
+                            alt="tiktokInsight4" class="w-[200px] h-[250px] object-cover rounded-2xl">
+                    </div>
+                    <div class="p-4 bg-[#2f2f36] rounded-xl">
+                        <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F131-1717399286549&w=256&q=75'
+                            alt="tiktokInsight5" class="w-[200px] h-[250px] object-cover rounded-2xl">
+                    </div>
+                </div>
+            </div>
+
         </div>
-
-        <!-- These are the 20 buttons -->
-        <div class="sm-only:flex mt-10 pl-6 pr-6 w-full no-scrollbar overflow-x-auto whitespace-nowrap">
-            <button id="about-btn" 
-            class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
-            <button id="brand-btn" 
-            class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
-            <button id="about-btn" 
-            class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
-            <button id="brand-btn" 
-            class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
-            <button id="about-btn" 
-            class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
-            <button id="brand-btn" 
-            class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
-            <button id="about-btn" 
-            class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
-            <button id="brand-btn" 
-            class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
-            <button id="about-btn" 
-            class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
-            <button id="brand-btn" 
-            class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
-            <button id="about-btn" 
-            class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
-            <button id="brand-btn" 
-            class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
-            <button id="about-btn" 
-            class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
-            <button id="brand-btn" 
-            class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
-            <button id="about-btn" 
-            class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
-            <button id="brand-btn" 
-            class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
-            <button id="about-btn" 
-            class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
-            <button id="brand-btn" 
-            class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
-            <button id="about-btn" 
-            class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
-            <button id="brand-btn" 
-            class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
-        </div>
-
-        <!-- This is [her socials account] section -->
-        <div class="pl-[20px] pr-[20px] mt-7 mb-[2px] overflow-x-auto w-full no-scrollbar">
-            <div class="static">
-                <h3 class="z-10 absolute text-white mb-6 text-[20px]
-                           sm-only:whitespace-nowrap text-2xl font-bold">My Socials</h3>
-            </div>
-            <div class="flex mt-10 gap-7 w-max">
-                
-                <div class="relative p-4 bg-[#2f2f36] rounded-xl">
-                    <a href="https://www.instagram.com/nouraglam/" target="_blank">
-                        <img src="https://mywall.me/assets/svg/link-icon.svg" 
-                            alt="linkImg"
-                            class="absolute top-6 left-64 w-9 h-9 rounded-full bg-[#ffffff99] p-2">
-                        <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F58-1717517985828&w=3840&q=75'
-                            alt="instaPage" class="w-[280px] h-[180px] object-cover rounded-2xl">
-                    </a>
-                    <h3 class="text-white font-bold">My Instagram</h3>
-                </div>
-                
-                <div class="relative p-4 bg-[#2f2f36] rounded-xl">
-                    <a href="https://www.tiktok.com/@nouraglam?_t=8mkivBukixc&amp;_r=1" target="_blank">
-                        <img src="https://mywall.me/assets/svg/link-icon.svg" 
-                            alt="linkImg"
-                            class="absolute top-6 left-64 w-9 h-9 rounded-full bg-[#ffffff99] p-2">
-                        <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F59-1717517998762&w=3840&q=75'
-                            alt="tiktokPage" class="w-[280px] h-[180px] object-cover rounded-2xl">
-                    </a>
-                    <h3 class="text-white font-bold">My Tiktok</h3>
-                </div>
-
-                <div class="relative p-4 bg-[#2f2f36] rounded-xl">
-                    <a href="https://www.snapchat.com/add/nouraglams?share_id=8GwflpeMQ8i3qCScErxOSQ&locale=ar_SA%40calendar%3Dgregorian%3Bnumbers%3Dlatn"
-                        target="_blank">
-                        <img src="https://mywall.me/assets/svg/link-icon.svg" 
-                            alt="linkImg"
-                            class="absolute top-6 left-64 w-9 h-9 rounded-full bg-[#ffffff99] p-2">
-                        <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F60-1717518021369&w=3840&q=75'
-                            alt="snapchat" class="w-[280px] h-[180px] object-cover rounded-2xl">
-                    </a>
-                    <h3 class="text-white font-bold">My Snapchat</h3>
-                </div>
-            </div>
-        </div>
-
-        <!-- This is [brand she had worked] with section -->
-        <div class="mt-7 sm-only:flex overflow-x-auto no-scrollbar w-full pl-[20px] pr-[50px]">
-            <div class="static">
-                <h3 class="z-10 absolute text-white font-bold mb-6 text-[20px]">Brands Workded With</h3>
-            </div>
-            <div class="flex gap-7 w-max mt-10">
-                <div class="p-3 bg-[#2f2f36] rounded-xl">
-                    <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F55-1717399010551&w=96&q=75'
-                        alt="brand1" class="w-[70px] h-[70px] object-cover rounded-2xl">
-                </div>
-
-                <div class="p-3 bg-[#2f2f36] rounded-xl">
-                    <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F60-1717399011254&w=96&q=75'
-                        alt="brand2" class="w-[70px] h-[70px] object-cover rounded-2xl">
-                </div>
-
-                <div class="p-3 bg-[#2f2f36] rounded-xl">
-                    <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F64-1717399011806&w=96&q=75'
-                        alt="brand3" class="w-[70px] h-[70px] object-cover rounded-2xl">
-                </div>
-
-                <div class="p-3 bg-[#2f2f36] rounded-xl">
-                    <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F63-1717399011666&w=96&q=75'
-                        alt="brand4" class="w-[70px] h-[70px] object-cover rounded-2xl">
-                </div>
-
-                <div class="p-3 bg-[#2f2f36] rounded-xl">
-                    <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F59-1717399011141&w=96&q=75'
-                        alt="brand5" class="w-[70px] h-[70px] object-cover rounded-2xl">
-
-                </div>
-            </div>
-        </div>
-
-        <!-- This is Insta insights section -->
-        <div class="pl-[20px] pr-[20px] mt-9 mb-[2px] overflow-x-auto w-full no-scrollbar">
-            <div class="static">
-                <h3 class="absolute z-10 text-white font-bold mr-[490px] mb-6 text-[20px] whitespace-nowrap">My Insta Insights</h3>
-            </div>
-            <div class="flex gap-7 w-max mt-10">
-                <div class="p-4 bg-[#2f2f36] rounded-xl">
-                    <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F123-1717416414812&w=256&q=75'
-                        alt="instaInsight1" class="w-[200px] h-[250px] object-cover rounded-2xl">
-                </div>
-                <div class="p-4 bg-[#2f2f36] rounded-xl">
-                    <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F124-1717416423576&w=256&q=75'
-                        alt="instaInsight2" class="w-[200px] h-[250px] object-cover rounded-2xl">
-                </div>
-                <div class="p-4 bg-[#2f2f36] rounded-xl">
-                    <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F127-1717416419454&w=256&q=75'
-                        alt="instaInsight3" class="w-[200px] h-[250px] object-cover rounded-2xl">
-                </div>
-                <div class="p-4 bg-[#2f2f36] rounded-xl">
-                    <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F125-1717416428166&w=256&q=75'
-                        alt="instaInsight3" class="w-[200px] h-[250px] object-cover rounded-2xl">
-                </div>
-            </div>
-        </div>
-
-        <!-- This is tiktok insights section -->
-        <div class="pl-[20px] pr-[20px] mt-7 mb-[100px] overflow-x-auto w-full no-scrollbar">
-            <div class="static">
-                <h3 class="absolute text-white font-bold mr-[490px] mb-6 text-[20px] whitespace-nowrap">My Tiktok Insights</h3>
-            </div>
-            <div class="flex gap-7 w-max mt-10">
-                <div class="p-4 bg-[#2f2f36] rounded-xl">
-                    <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F126-1717416394058&w=256&q=75'
-                        alt="tiktokInsight1" class="w-[200px] h-[250px] object-cover rounded-2xl">
-                </div>
-                <div class="p-4 bg-[#2f2f36] rounded-xl">
-                    <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F128-1717399286119&w=256&q=75'
-                        alt="tiktokInsight2" class="w-[200px] h-[250px] object-cover rounded-2xl">
-                </div>
-                <div class="p-4 bg-[#2f2f36] rounded-xl">
-                    <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F129-1717399286264&w=256&q=75'
-                        alt="tiktokInsight3" class="w-[200px] h-[250px] object-cover rounded-2xl">
-                </div>
-                <div class="p-4 bg-[#2f2f36] rounded-xl">
-                    <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F130-1717399286418&w=256&q=75'
-                        alt="tiktokInsight4" class="w-[200px] h-[250px] object-cover rounded-2xl">
-                </div>
-                <div class="p-4 bg-[#2f2f36] rounded-xl">
-                    <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fcustom%2Fimages%2F131-1717399286549&w=256&q=75'
-                        alt="tiktokInsight5" class="w-[200px] h-[250px] object-cover rounded-2xl">
-                </div>
-            </div>
-        </div>
-
-    </div>
 
 
 
@@ -266,219 +306,247 @@
 
 
     
-    <div id="brand-section" style="display: none;" class="bg-black flex flex-col items-center min-h-screen overflow-hidden
-                                                            sm-only:w-full mx-auto">
-        
-        <!-- This is her Image -->
-        <div class="text-white mt-4">
-            <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fprofile%2Fnoura-bgrc-upload-1717414160245-15&w=640&q=75'
-                alt="headerImage" class="w-80 h-80 rounded-full object-cover">
-        </div>
+        <div id="brand-section" style="display: none;" class="flex w-[700px] mx-auto flex-col justify-center items-center bg-black overflow-hidden">
+            
+            <!-- This is her Image -->
+            <div class="text-white mt-4">
+                <img src='https://mywall.me/_next/image?url=https%3A%2F%2Fdghiinrvmhb25.cloudfront.net%2Fpublic%2Fprofile%2Fnoura-bgrc-upload-1717414160245-15&w=640&q=75'
+                    alt="headerImage" class="w-80 h-80 rounded-full object-cover">
+            </div>
 
-        <!-- This is her username -->
-        <div class="absolute bg-[#2f2f36] text-white whitespace-nowrap font-bold rounded-xl
-                    sm-only:left-28 top-[290px] mb-10 z-10 text-xl px-[120px] py-[20px]">
-            URSULA JONES
-        </div>
+            <!-- This is her username -->
+            <div class="absolute bg-[#2f2f36] text-white whitespace-nowrap font-bold rounded-xl
+                        sm-only:left-28 top-[290px] mb-10 z-10 text-xl px-[120px] py-[20px]">
+                URSULA JONES
+            </div>
 
-        <!-- This is her short about section -->
-        <div class="flex flex-col bg-white text-black p-5 px-[55px] mt-8 rounded-xl text-center text-[14px]">
-            <span> Travel influencer who shares her adventures </span>
-            <span> and travel on social media and personal </span>
-            <span> blog. </span>
-        </div>
+            <!-- This is her short about section -->
+            <div class="flex flex-col bg-white text-black p-5 px-[55px] mt-8 rounded-xl text-center text-[14px]">
+                <span> Travel influencer who shares her adventures </span>
+                <span> and travel on social media and personal </span>
+                <span> blog. </span>
+            </div>
 
-        <!-- This is her social accounts icons -->
-        <div class="flex flex-row gap-3 mt-3">
-            <a href="" target="_blank">
-                    <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_black-512.png"
-                    alt="facebook" 
+            <!-- This is her social accounts icons -->
+            <div class="flex flex-row gap-3 mt-3">
+                <a href="" target="_blank">
+                        <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_black-512.png"
+                        alt="facebook" 
+                        class="animate-pulse text-white h-10 w-10 p-1.5 bg-white rounded-full">
+                    </a> 
+                </a>
+
+                <a href="" target="_blank">
+                        <img src="https://www.edigitalagency.com.au/wp-content/uploads/YouTube-icon-black-png.png"
+                        alt="youtube" 
+                        class="animate-pulse text-white h-10 w-12 p-2 bg-white rounded-full">
+                    </a> 
+                </a>
+
+                <a href="" target="_blank">
+                    <img src="https://pngimg.com/uploads/pinterest/pinterest_PNG15.png"
+                    alt="pinterest" 
                     class="animate-pulse text-white h-10 w-10 p-1.5 bg-white rounded-full">
-                </a> 
-            </a>
+                </a>
 
-            <a href="" target="_blank">
-                    <img src="https://www.edigitalagency.com.au/wp-content/uploads/YouTube-icon-black-png.png"
-                    alt="youtube" 
-                    class="animate-pulse text-white h-10 w-12 p-2 bg-white rounded-full">
-                </a> 
-            </a>
+                <a href="https://www.snapchat.com/add/nouraglams?share_id=8GwflpeMQ8i3qCScErxOSQ&locale=ar_SA%40calendar%3Dgregorian%3Bnumbers%3Dlatn" target="_blank">
+                    <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/twitter-icon.png"
+                    alt="twitter" 
+                    class="animate-pulse text-white h-10 w-10 p-1.5 bg-white rounded-full">
+                </a>
 
-            <a href="" target="_blank">
-                <img src="https://pngimg.com/uploads/pinterest/pinterest_PNG15.png"
-                alt="pinterest" 
-                class="animate-pulse text-white h-10 w-10 p-1.5 bg-white rounded-full">
-            </a>
-
-            <a href="https://www.snapchat.com/add/nouraglams?share_id=8GwflpeMQ8i3qCScErxOSQ&locale=ar_SA%40calendar%3Dgregorian%3Bnumbers%3Dlatn" target="_blank">
-                <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/twitter-icon.png"
-                alt="twitter" 
-                class="animate-pulse text-white h-10 w-10 p-1.5 bg-white rounded-full">
-            </a>
-
-            <a href="https://www.tiktok.com/@nouraglam?_t=8mkivBukixc&amp;_r=1" target="_blank">
-                <img src="https://www.pngplay.com/wp-content/uploads/9/TikTok-Logo-Background-PNG.png" 
-                alt="tiktok"
-                class="animate-pulse text-white h-10 w-10 p-1 bg-white rounded-full">
-            </a>
-        </div>
-
-        <!-- These are the 20 buttons -->
-        <div class="sm-only:flex mt-10 pl-6 pr-6 w-full no-scrollbar overflow-x-auto whitespace-nowrap">
-            <button id="about-btn" 
-            class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
-            <button id="brand-btn" 
-            class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
-            <button id="about-btn" 
-            class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
-            <button id="brand-btn" 
-            class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
-            <button id="about-btn" 
-            class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
-            <button id="brand-btn" 
-            class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
-            <button id="about-btn" 
-            class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
-            <button id="brand-btn" 
-            class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
-            <button id="about-btn" 
-            class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
-            <button id="brand-btn" 
-            class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
-            <button id="about-btn" 
-            class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
-            <button id="brand-btn" 
-            class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
-            <button id="about-btn" 
-            class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
-            <button id="brand-btn" 
-            class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
-            <button id="about-btn" 
-            class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
-            <button id="brand-btn" 
-            class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
-            <button id="about-btn" 
-            class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
-            <button id="brand-btn" 
-            class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
-            <button id="about-btn" 
-            class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
-            <button id="brand-btn" 
-            class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
-        </div>
-
-        <!-- These are the videos of her insta collabs -->
-        <div class="pl-[20px] pr-[20px] mt-7 mb-[2px] overflow-x-auto w-full no-scrollbar">
-            <div class="static">
-                <h3 class="absolute z-10 text-white font-bold mr-[490px] mb-6 text-[20px] whitespace-nowrap">My Insta Collabs</h3>
+                <a href="https://www.tiktok.com/@nouraglam?_t=8mkivBukixc&amp;_r=1" target="_blank">
+                    <img src="https://www.pngplay.com/wp-content/uploads/9/TikTok-Logo-Background-PNG.png" 
+                    alt="tiktok"
+                    class="animate-pulse text-white h-10 w-10 p-1 bg-white rounded-full">
+                </a>
             </div>
-            <div class="flex gap-7 w-max mt-10">
-                <div class="relative p-4 bg-[#2f2f36] rounded-xl">
-                    <img src="https://mywall.me/assets/svg/link-icon.svg" 
-                            alt="linkImg"
-                            class="absolute top-6 left-44 w-9 h-9 rounded-full bg-[#ffffff99] p-2">
-                    <video class="w-[200px] h-[300px] object-cover rounded-2xl" autoplay loop muted>
-                        <source src="https://dghiinrvmhb25.cloudfront.net/public/custom/images/147-1717398301782" type="video/mp4">
-                        Your browser doesnt supports it
-                    </video>
+
+            <!-- These are the 20 buttons -->
+            <div class="sm-only:flex mt-10 pl-6 pr-6 w-full no-scrollbar overflow-x-auto whitespace-nowrap">
+                <button id="about-btn" 
+                class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
+                <button id="brand-btn" 
+                class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
+                <button id="about-btn" 
+                class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
+                <button id="brand-btn" 
+                class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
+                <button id="about-btn" 
+                class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
+                <button id="brand-btn" 
+                class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
+                <button id="about-btn" 
+                class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
+                <button id="brand-btn" 
+                class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
+                <button id="about-btn" 
+                class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
+                <button id="brand-btn" 
+                class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
+                <button id="about-btn" 
+                class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
+                <button id="brand-btn" 
+                class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
+                <button id="about-btn" 
+                class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
+                <button id="brand-btn" 
+                class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
+                <button id="about-btn" 
+                class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
+                <button id="brand-btn" 
+                class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
+                <button id="about-btn" 
+                class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
+                <button id="brand-btn" 
+                class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
+                <button id="about-btn" 
+                class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
+                <button id="brand-btn" 
+                class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
+            </div>
+
+            <!-- These are the videos of her insta collabs -->
+            <div class="pl-[20px] pr-[20px] mt-7 mb-[2px] overflow-x-auto w-full no-scrollbar">
+                <div class="static">
+                    <h3 class="absolute z-10 text-white font-bold mr-[490px] mb-6 text-[20px] whitespace-nowrap">My Insta Collabs</h3>
                 </div>
-                <div class="relative p-4 bg-[#2f2f36] rounded-xl">
-                    <img src="https://mywall.me/assets/svg/link-icon.svg" 
-                            alt="linkImg"
-                            class="absolute top-6 left-44 w-9 h-9 rounded-full bg-[#ffffff99] p-2">
-                    <video class="w-[200px] h-[300px] object-cover rounded-2xl" autoplay loop muted>
-                        <source src="https://dghiinrvmhb25.cloudfront.net/public/custom/images/143-1717398299381" type="video/mp4">
-                        Your browser doesnt supports it
-                    </video>
-                </div>
-                <div class="relative p-4 bg-[#2f2f36] rounded-xl">
-                    <img src="https://mywall.me/assets/svg/link-icon.svg" 
-                            alt="linkImg"
-                            class="absolute top-6 left-44 w-9 h-9 rounded-full bg-[#ffffff99] p-2">
-                    <video class="w-[200px] h-[300px] object-cover rounded-2xl" autoplay loop muted>
-                        <source src="https://dghiinrvmhb25.cloudfront.net/public/custom/images/149-1717398302957" type="video/mp4">
-                        Your browser doesnt supports it
-                    </video>
-                </div>
-                <div class="relative p-4 bg-[#2f2f36] rounded-xl">
-                    <img src="https://mywall.me/assets/svg/link-icon.svg" 
-                            alt="linkImg"
-                            class="absolute top-6 left-44 w-9 h-9 rounded-full bg-[#ffffff99] p-2">
-                    <video class="w-[200px] h-[300px] object-cover rounded-2xl" autoplay loop muted>
-                        <source src="https://dghiinrvmhb25.cloudfront.net/public/custom/images/146-1717398301363" type="video/mp4">
-                        Your browser doesnt supports it
-                    </video>
-                </div>
-                <div class="relative p-4 bg-[#2f2f36] rounded-xl">
-                    <img src="https://mywall.me/assets/svg/link-icon.svg" 
-                            alt="linkImg"
-                            class="absolute top-6 left-44 w-9 h-9 rounded-full bg-[#ffffff99] p-2">
-                    <video class="w-[200px] h-[300px] object-cover rounded-2xl" autoplay loop muted>
-                        <source src="https://dghiinrvmhb25.cloudfront.net/public/custom/images/148-1717398302159" type="video/mp4">
-                        Your browser doesnt supports it
-                    </video>
+                <div class="flex gap-7 w-max mt-10">
+                    <div class="relative p-4 bg-[#2f2f36] rounded-xl">
+                        <img src="https://mywall.me/assets/svg/link-icon.svg" 
+                                alt="linkImg"
+                                class="absolute top-6 left-44 w-9 h-9 rounded-full bg-[#ffffff99] p-2">
+                        <video class="w-[200px] h-[300px] object-cover rounded-2xl" autoplay loop muted>
+                            <source src="https://dghiinrvmhb25.cloudfront.net/public/custom/images/147-1717398301782" type="video/mp4">
+                            Your browser doesnt supports it
+                        </video>
+                    </div>
+                    <div class="relative p-4 bg-[#2f2f36] rounded-xl">
+                        <img src="https://mywall.me/assets/svg/link-icon.svg" 
+                                alt="linkImg"
+                                class="absolute top-6 left-44 w-9 h-9 rounded-full bg-[#ffffff99] p-2">
+                        <video class="w-[200px] h-[300px] object-cover rounded-2xl" autoplay loop muted>
+                            <source src="https://dghiinrvmhb25.cloudfront.net/public/custom/images/143-1717398299381" type="video/mp4">
+                            Your browser doesnt supports it
+                        </video>
+                    </div>
+                    <div class="relative p-4 bg-[#2f2f36] rounded-xl">
+                        <img src="https://mywall.me/assets/svg/link-icon.svg" 
+                                alt="linkImg"
+                                class="absolute top-6 left-44 w-9 h-9 rounded-full bg-[#ffffff99] p-2">
+                        <video class="w-[200px] h-[300px] object-cover rounded-2xl" autoplay loop muted>
+                            <source src="https://dghiinrvmhb25.cloudfront.net/public/custom/images/149-1717398302957" type="video/mp4">
+                            Your browser doesnt supports it
+                        </video>
+                    </div>
+                    <div class="relative p-4 bg-[#2f2f36] rounded-xl">
+                        <img src="https://mywall.me/assets/svg/link-icon.svg" 
+                                alt="linkImg"
+                                class="absolute top-6 left-44 w-9 h-9 rounded-full bg-[#ffffff99] p-2">
+                        <video class="w-[200px] h-[300px] object-cover rounded-2xl" autoplay loop muted>
+                            <source src="https://dghiinrvmhb25.cloudfront.net/public/custom/images/146-1717398301363" type="video/mp4">
+                            Your browser doesnt supports it
+                        </video>
+                    </div>
+                    <div class="relative p-4 bg-[#2f2f36] rounded-xl">
+                        <img src="https://mywall.me/assets/svg/link-icon.svg" 
+                                alt="linkImg"
+                                class="absolute top-6 left-44 w-9 h-9 rounded-full bg-[#ffffff99] p-2">
+                        <video class="w-[200px] h-[300px] object-cover rounded-2xl" autoplay loop muted>
+                            <source src="https://dghiinrvmhb25.cloudfront.net/public/custom/images/148-1717398302159" type="video/mp4">
+                            Your browser doesnt supports it
+                        </video>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- These are the videos of her tiktok collabs -->
-        <div class="pl-[20px] pr-[20px] mt-7 mb-[20px] overflow-x-auto w-full no-scrollbar">
-            <div class="static">
-                <h3 class="absolute z-10 text-white font-bold mr-[490px] mb-6 text-[20px] whitespace-nowrap">Tiktok Collabs</h3>
+            <!-- These are the videos of her tiktok collabs -->
+            <div class="pl-[20px] pr-[20px] mt-7 mb-[20px] overflow-x-auto w-full no-scrollbar">
+                <div class="static">
+                    <h3 class="absolute z-10 text-white font-bold mr-[490px] mb-6 text-[20px] whitespace-nowrap">Tiktok Collabs</h3>
+                </div>
+                <div class="flex gap-7 w-max mt-10">
+                    
+                    <div class="relative p-4 bg-[#2f2f36] rounded-xl">
+                        <img src="https://mywall.me/assets/svg/link-icon.svg" 
+                                alt="linkImg"
+                                class="absolute top-6 left-44 w-9 h-9 rounded-full bg-[#ffffff99] p-2">
+                        <video class="w-[200px] h-[300px] object-cover rounded-2xl" autoplay loop muted>
+                            <source src="https://dghiinrvmhb25.cloudfront.net/public/custom/images/138-1717397273924" type="video/mp4">
+                            Your browser doesnt supports it
+                        </video>
+                    </div>
+                    <div class="relative p-4 bg-[#2f2f36] rounded-xl">
+                        <img src="https://mywall.me/assets/svg/link-icon.svg" 
+                                alt="linkImg"
+                                class="absolute top-6 left-44 w-9 h-9 rounded-full bg-[#ffffff99] p-2">
+                        <video class="w-[200px] h-[300px] object-cover rounded-2xl" autoplay loop muted>
+                            <source src="https://dghiinrvmhb25.cloudfront.net/public/custom/images/140-1717397274754" type="video/mp4">
+                            Your browser doesnt supports it
+                        </video>
+                    </div>
+                    <div class="relative p-4 bg-[#2f2f36] rounded-xl">
+                        <img src="https://mywall.me/assets/svg/link-icon.svg" 
+                                alt="linkImg"
+                                class="absolute top-6 left-44 w-9 h-9 rounded-full bg-[#ffffff99] p-2">
+                        <video class="w-[200px] h-[300px] object-cover rounded-2xl" autoplay loop muted>
+                            <source src="https://dghiinrvmhb25.cloudfront.net/public/custom/images/139-1717397274347" type="video/mp4">
+                            Your browser doesnt supports it
+                        </video>
+                    </div>
+                    <div class="relative p-4 bg-[#2f2f36] rounded-xl">
+                        <img src="https://mywall.me/assets/svg/link-icon.svg" 
+                                alt="linkImg"
+                                class="absolute top-6 left-44 w-9 h-9 rounded-full bg-[#ffffff99] p-2">
+                        <video class="w-[200px] h-[300px] object-cover rounded-2xl" autoplay loop muted>
+                            <source src="https://dghiinrvmhb25.cloudfront.net/public/custom/images/141-1717397275092" type="video/mp4">
+                            Your browser doesnt supports it
+                        </video>
+                    </div>
+                    <div class="relative p-4 bg-[#2f2f36] rounded-xl">
+                        <img src="https://mywall.me/assets/svg/link-icon.svg" 
+                                alt="linkImg"
+                                class="absolute top-6 left-44 w-9 h-9 rounded-full bg-[#ffffff99] p-2">
+                        <video class="w-[200px] h-[300px] object-cover rounded-2xl" autoplay loop muted>
+                            <source src="https://dghiinrvmhb25.cloudfront.net/public/custom/images/137-1717397273186" type="video/mp4">
+                            Your browser doesnt supports it
+                        </video>
+                    </div>
+                </div>
             </div>
-            <div class="flex gap-7 w-max mt-10">
-                
-                <div class="relative p-4 bg-[#2f2f36] rounded-xl">
-                    <img src="https://mywall.me/assets/svg/link-icon.svg" 
-                            alt="linkImg"
-                            class="absolute top-6 left-44 w-9 h-9 rounded-full bg-[#ffffff99] p-2">
-                    <video class="w-[200px] h-[300px] object-cover rounded-2xl" autoplay loop muted>
-                        <source src="https://dghiinrvmhb25.cloudfront.net/public/custom/images/138-1717397273924" type="video/mp4">
-                        Your browser doesnt supports it
-                    </video>
-                </div>
-                <div class="relative p-4 bg-[#2f2f36] rounded-xl">
-                    <img src="https://mywall.me/assets/svg/link-icon.svg" 
-                            alt="linkImg"
-                            class="absolute top-6 left-44 w-9 h-9 rounded-full bg-[#ffffff99] p-2">
-                    <video class="w-[200px] h-[300px] object-cover rounded-2xl" autoplay loop muted>
-                        <source src="https://dghiinrvmhb25.cloudfront.net/public/custom/images/140-1717397274754" type="video/mp4">
-                        Your browser doesnt supports it
-                    </video>
-                </div>
-                <div class="relative p-4 bg-[#2f2f36] rounded-xl">
-                    <img src="https://mywall.me/assets/svg/link-icon.svg" 
-                            alt="linkImg"
-                            class="absolute top-6 left-44 w-9 h-9 rounded-full bg-[#ffffff99] p-2">
-                    <video class="w-[200px] h-[300px] object-cover rounded-2xl" autoplay loop muted>
-                        <source src="https://dghiinrvmhb25.cloudfront.net/public/custom/images/139-1717397274347" type="video/mp4">
-                        Your browser doesnt supports it
-                    </video>
-                </div>
-                <div class="relative p-4 bg-[#2f2f36] rounded-xl">
-                    <img src="https://mywall.me/assets/svg/link-icon.svg" 
-                            alt="linkImg"
-                            class="absolute top-6 left-44 w-9 h-9 rounded-full bg-[#ffffff99] p-2">
-                    <video class="w-[200px] h-[300px] object-cover rounded-2xl" autoplay loop muted>
-                        <source src="https://dghiinrvmhb25.cloudfront.net/public/custom/images/141-1717397275092" type="video/mp4">
-                        Your browser doesnt supports it
-                    </video>
-                </div>
-                <div class="relative p-4 bg-[#2f2f36] rounded-xl">
-                    <img src="https://mywall.me/assets/svg/link-icon.svg" 
-                            alt="linkImg"
-                            class="absolute top-6 left-44 w-9 h-9 rounded-full bg-[#ffffff99] p-2">
-                    <video class="w-[200px] h-[300px] object-cover rounded-2xl" autoplay loop muted>
-                        <source src="https://dghiinrvmhb25.cloudfront.net/public/custom/images/137-1717397273186" type="video/mp4">
-                        Your browser doesnt supports it
-                    </video>
-                </div>
-            </div>
-        </div>
         </div>
     </div>
 
-    <script src="/dist/script.js" defer></script>
+
+
+
+    <script>
+        function showContent(section) 
+        {
+            // Hide all sections initially
+            document.getElementById("about-section").style.display = "none";
+            document.getElementById("brand-section").style.display = "none";
+
+            // Show the selected section
+            if (section === 'about') {
+                document.getElementById("about-section").style.display = "flex";
+                document.getElementById("about-btn").classList.add("active-button");
+                document.getElementById("about-btn").classList.remove("inactive-button");
+                document.getElementById("brand-btn").classList.add("inactive-button");
+                document.getElementById("brand-btn").classList.remove("active-button");
+            } else if (section === 'brand') {
+                document.getElementById("brand-section").style.display = "flex";
+                document.getElementById("brand-btn").classList.add("active-button");
+                document.getElementById("brand-btn").classList.remove("inactive-button");
+                document.getElementById("about-btn").classList.add("inactive-button");
+                document.getElementById("about-btn").classList.remove("active-button");
+            }
+        }
+
+        // Initially, show the "about-section" by default
+        showContent('about');
+    </script>
+    
 </body>
 
 </html>
