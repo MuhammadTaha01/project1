@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- <link rel="stylesheet" href="/src/output.css"> -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
 
     <title>MyWall</title>
 </head>
@@ -37,27 +37,21 @@
 
     .active-button 
     {
-        /* Example styles */
-        background-color: white;
-        color: black;
+        background-color: white !important;
+        color: black !important;
     }
 
     .inactive-button 
     {
-        /* Example styles */
-        background-color: #626262;
-        color: white;
-    }
-    .hidden 
-    {
-        display: none;
+        background-color: #626262 !important;
+        color: white !important;
     }
 </style>
 
 <body>
 
     <div class="container-wrapper bg-white flex">
-        <div id="about-section" style="display: none;" class="flex w-[700px] mx-auto flex-col justify-center items-center bg-black overflow-hidden">
+        <div class="flex w-[700px] mx-auto flex-col justify-center items-center bg-black overflow-hidden">
 
             <!-- This is her Image -->
             <div class="relative text-white mt-4">
@@ -116,7 +110,7 @@
 
             <!-- These are the 20 buttons -->
             <div class="sm-only:flex mt-10 pl-6 pr-6 w-full no-scrollbar overflow-x-auto whitespace-nowrap">
-                <button id="toggle-sections" 
+                <button id="about-btn" 
                 class="relative text-black rounded-2xl bg-white py-1 px-3 active-button mr-3" onclick="showContent('about')">About Me</button>
                 <button id="brand-btn" 
                 class="relative text-white bg-[#626262] rounded-2xl py-1 px-4 border border-white inactive-button mr-3" onclick="showContent('brand')">Brand Collabs</button>
@@ -126,8 +120,10 @@
 
             <!-- --------------------------------------------------------------------------------------------- -->
 
+        <div id="about-section" class="section flex flex-col mx-auto justify-center items-center">
+
             <!-- This is [her socials account] section -->
-            <div id="social-section" class="section pl-[20px] pr-[20px] mt-7 mb-[2px] overflow-x-auto w-full no-scrollbar">
+            <div class="pl-[20px] pr-[20px] mt-7 mb-[2px] overflow-x-auto w-full no-scrollbar">
                 <div class="static">
                     <h3 class="z-10 absolute text-white mb-6 text-[20px]
                             sm-only:whitespace-nowrap text-2xl font-bold">My Socials</h3>
@@ -171,7 +167,7 @@
             </div>
 
             <!-- This is [brand she had worked] with section -->
-            <div id="brand-section" class="section mt-7 sm-only:flex overflow-x-auto no-scrollbar w-full pl-[20px] pr-[50px]">
+            <div class="mt-7 sm-only:flex overflow-x-auto no-scrollbar w-full pl-[20px] pr-[50px]">
                 <div class="static">
                     <h3 class="z-10 absolute text-white font-bold mb-6 text-[20px]">Brands Workded With</h3>
                 </div>
@@ -205,7 +201,7 @@
             </div>
 
             <!-- This is Insta insights section -->
-            <div id="insta-section" class="section pl-[20px] pr-[20px] mt-9 mb-[2px] overflow-x-auto w-full no-scrollbar">
+            <div class="pl-[20px] pr-[20px] mt-9 mb-[2px] overflow-x-auto w-full no-scrollbar">
                 <div class="static">
                     <h3 class="absolute z-10 text-white font-bold mr-[490px] mb-6 text-[20px] whitespace-nowrap">My Insta Insights</h3>
                 </div>
@@ -230,7 +226,7 @@
             </div>
 
             <!-- This is tiktok insights section -->
-            <div id="tiktok-section" class="section pl-[20px] pr-[20px] mt-7 mb-[100px] overflow-x-auto w-full no-scrollbar">
+            <div class="pl-[20px] pr-[20px] mt-7 mb-[100px] overflow-x-auto w-full no-scrollbar">
                 <div class="static">
                     <h3 class="absolute text-white font-bold mr-[490px] mb-6 text-[20px] whitespace-nowrap">My Tiktok Insights</h3>
                 </div>
@@ -257,24 +253,27 @@
                     </div>
                 </div>
             </div>
-                
+
+        </div>      
             <!-- ------------------------------------------------------------------------------------------------- -->
 
 
-
+        <div id="brand-section" class="section hidden">
+            <h1 class="text-white">This is brand section</h1>
         </div>
 
+
+        </div>
     </div>
-
-
-
+</body>
 
     <script>
+
         function showContent(section) 
         {
             // Hide all sections initially
             document.getElementById("about-section").style.display = "none";
-            //document.getElementById("brand-section").style.display = "none";
+            document.getElementById("brand-section").style.display = "none";
 
             // Show the selected section
             if (section === 'about') {
@@ -296,19 +295,5 @@
         showContent('about');
 
     </script>
-
-    <script>
-        $(document).ready(function() {
-            // Initially hide all sections
-            $('.section').addClass('hidden');
-
-            $('#toggle-sections').click(function() {
-                // Toggle visibility for all sections
-                $('.section').toggleClass('hidden');
-            });
-        });
-    </script>
-    
-</body>
 
 </html>
